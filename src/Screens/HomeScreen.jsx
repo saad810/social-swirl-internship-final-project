@@ -37,7 +37,7 @@ const HomeScreen = () => {
         explore this internship
       </h6>
     <h5>App is hosted on Vercel: 
-      <a href="">Vercel Link</a>
+      <a href="https://social-swirl-internship-final-project.vercel.app/">Vercel Link</a>
     </h5>
     </Container>
   );
