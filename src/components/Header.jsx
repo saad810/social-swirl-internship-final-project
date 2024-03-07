@@ -33,14 +33,14 @@ const Header = () => {
             <Link to="/words" className="text-light px-2 text-decoration-none">
               <Nav.Item>Words App</Nav.Item>
             </Link>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Link
                 to="/wordsSlice"
                 className="text-light px-2 text-decoration-none"
               >
                 Words App Redux
               </Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
