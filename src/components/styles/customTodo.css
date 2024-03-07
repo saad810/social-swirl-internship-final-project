@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  max-width: 350px;
+  margin: 20px auto;
+  background-color: #f6f7f9;
+
+  padding: 20px;
+}
+form {
+  /* border: 2px solid saddlebrown; */
+  /* border-radius: 10px; */
+  /* padding: 10px 5px; */
+  display: flex;
+  margin-bottom: 20px;
+}
+form input[type="text"] {
+  border: 2px solid #868eaa;
+  background: none;
+  color: black;
+  /* border: 0; */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 4px 8px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+form button {
+  background-color: #3a3f52;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ecedf2;
+}
+
+div.task {
+  font-size: 16px;
+  background-color: #d5d7e2;
+  border-radius: 5px;
+  padding: 10px 9px;
+  /* margin-top: 5px; */
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s linear;
+}
+div.task svg {
+  height: 20px;
+  margin-right: 6px;
+  fill: #3a3f52;
+}
+div.task.done {
+  opacity: 0.8;
+}
+div.task-name,
+div.task form {
+  flex-grow: 1;
+}
+div.task span {
+  position: relative;
+}
+div.task span:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  color: #677090;
+  /* z-index: 5; */
+  background-color: #3a3f52;
+  position: absolute;
+  top: 9px;
+  transition: width 0.1s linear;
+}
+div.task.done span:before {
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+div.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button.trash {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+button.trash svg {
+  fill: #888;
+  height: 18px;
+}
+div.task input {
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
